@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LockScreen</string>
+    <string name="unlock_hint">Double Tap\nUnlock</string>
+    <string name="unlock_switch">Enable Screen Lock</string>
+</resources>
