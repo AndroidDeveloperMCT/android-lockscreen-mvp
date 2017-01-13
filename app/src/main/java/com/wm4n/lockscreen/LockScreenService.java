@@ -126,7 +126,10 @@ public class LockScreenService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        boolean startLocked = intent.getBooleanExtra(KEY_START_LOCKED, false);
+        boolean startLocked = false;
+        if(null != intent) {
+            startLocked = intent.getBooleanExtra(KEY_START_LOCKED, false);
+        }
         if(startLocked) {
             Intent lockIntent = new Intent(this, LockScreenActivity.class);
             lockIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
