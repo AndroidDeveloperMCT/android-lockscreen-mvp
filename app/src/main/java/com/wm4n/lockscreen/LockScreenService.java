@@ -92,7 +92,7 @@ public class LockScreenService extends Service {
         final WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams(
                 WindowManager.LayoutParams.MATCH_PARENT,
                 WindowManager.LayoutParams.MATCH_PARENT,
-                WindowManager.LayoutParams.TYPE_SYSTEM_ERROR, // SYSTEM_ERROR helps hideOverlay status bar (notification)
+                WindowManager.LayoutParams.TYPE_SYSTEM_ERROR, // SYSTEM_ERROR helps hide the status bar (notification)
                 WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE |
                         WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED |
                         WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED |

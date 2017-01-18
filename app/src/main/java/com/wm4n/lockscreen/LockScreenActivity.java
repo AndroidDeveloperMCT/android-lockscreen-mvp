@@ -42,10 +42,6 @@ public class LockScreenActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         hideControlUI();
-//        LockScreenService service = LockScreenService.getInstance();
-//        if(null != service) {
-//            service.showOverlay();
-//        }
     }
 
     @Override
